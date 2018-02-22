@@ -1,0 +1,11 @@
+version: '2'
+services:
+    facts-postgresql:
+        image: postgres:9.6.5
+        # volumes:
+        #     - ~/volumes/jhipster/facts/postgresql/:/var/lib/postgresql/data/
+        environment:
+            - POSTGRES_USER=facts
+            - POSTGRES_PASSWORD=
+        ports:
+            - 5432:5432
